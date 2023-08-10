@@ -20,26 +20,44 @@
   <form>
     <div id="square-1">
       Bill
+      <img src="/images/icon-dollar.svg" id="dollar-img">
       <input type="number">
 
       Select Tip %
-      <button>5%</button>
-      <button>10%</button>
-      <button>15%</button>
-      <button>25%</button>
-      <button>50%</button>
-      <button>Custom</button>
+      <section>
+        <button>5%</button>
+        <button>10%</button>
+        <button id="button-15">15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <button id="button-custom">Custom</button>
+      </section>
+      
 
       Number of People
+      <img src="/images/icon-person.svg" id="person-img">
       <input type="number">
     </div>
 
     <div id="square-2">
-      Tip Amount
-      / person
 
-      Total
-      / person
+      <div id="tip-amount">
+        <span>
+          Tip Amount 
+          <br>
+          / person
+        </span>
+        <h3>$4.27</h3>
+      </div>
+      
+      <div id="total-person">
+        <span>
+          Total
+          <br>
+          / person
+        </span>
+        <h3>$32.79</h3>
+      </div>
 
       <button>Reset</button>
     </div>
