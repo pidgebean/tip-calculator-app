@@ -21,7 +21,7 @@
     <div id="square-1">
       Bill
       <img src="/images/icon-dollar.svg" id="dollar-img">
-      <input type="number" id="bill-amount">
+      <input type="number" id="bill-amount" placeholder="0">
 
       Select Tip %
       <section>
@@ -46,10 +46,14 @@
         <input type="number" id="button-custom" placeholder="Custom">
       </section>
       
-
-      Number of People
+      <span id="error-span">
+        Number of People
+        <div id="error-message">Can't be zero</div>
+      </span>
+      
+      
       <img src="/images/icon-person.svg" id="person-img">
-      <input type="number" id="people-amount">
+      <input type="number" id="people-amount" placeholder="0">
     </div>
 
     <div id="square-2">

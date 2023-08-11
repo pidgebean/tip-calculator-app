@@ -7,6 +7,17 @@ function tipCalculator(){
     console.log(total);
     console.log(people);
 
+    if ( total == "" || total == "0" ){    
+        // call total error function 
+        document.getElementById("bill-amount").style.border = "2px solid red";
+        //document.getElementById("bill-amount").style.borderColor = "red";
+    }
+
+    if ( people == "" || people == "0" ){    
+        // call people error function 
+        document.getElementById("people-amount").style.border = "2px solid red";
+    }
+
     let tipCalc = document.getElementById("tip-calc").innerHTML;
     let totalCalc = document.getElementById("total-calc").innerHTML;
 
@@ -31,8 +42,6 @@ function tipCalculator(){
     if (custom > 0){
         percentage = custom / 100;
     }
-
-    console.log(percentage);
 
     let number1 = 0;
     let number2 = 0;
