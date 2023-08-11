@@ -21,22 +21,35 @@
     <div id="square-1">
       Bill
       <img src="/images/icon-dollar.svg" id="dollar-img">
-      <input type="number">
+      <input type="number" id="bill-amount">
 
       Select Tip %
       <section>
-        <button>5%</button>
-        <button>10%</button>
-        <button id="button-15">15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <button id="button-custom">Custom</button>
+        
+
+        <input class="radio" type="radio" id="5%" name="tip">
+        <label for="5%">5%</label>
+
+        <input class="radio" type="radio" id="10%" name="tip">
+        <label for="10%">10%</label>
+
+        <input class="radio" type="radio" id="15%" name="tip">
+        <label for="15%">15%</label>
+
+        <input class="radio" type="radio" id="25%" name="tip">
+        <label for="25%">25%</label>
+
+        <input class="radio" type="radio" id="50%" name="tip">
+        <label for="50%">50%</label>
+        
+
+        <input type="number" id="button-custom" placeholder="Custom">
       </section>
       
 
       Number of People
       <img src="/images/icon-person.svg" id="person-img">
-      <input type="number">
+      <input type="number" id="people-amount">
     </div>
 
     <div id="square-2">
@@ -45,23 +58,23 @@
         <span>
           Tip Amount 
           <br>
-          / person
+          <h4>/ person</h4>
         </span>
-        <h3>$4.27</h3>
+        <h3 id="tip-calc">$0.00</h3>
       </div>
       
       <div id="total-person">
         <span>
           Total
           <br>
-          / person
+          <h4>/ person</h4>
         </span>
-        <h3>$32.79</h3>
+        <h3 id="total-calc">$0.00</h3>
       </div>
 
-      <button>Reset</button>
+      <button type="button" onclick="tipCalculator()">Reset</button>
     </div>
   </form>
-  
+  <script src="script.js"></script>
 </body>
 </html>

@@ -57,6 +57,16 @@ form{
     margin-top: 0.5em;
     font-weight: 700;
     text-align: end;
+    padding: 0.5em;
+}
+
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }
 
 #square-1 section{
@@ -66,26 +76,45 @@ form{
     margin-bottom: 2em;
 }
 
-#square-1 button{
-    width: 6em;
-    background-color: hsl(183, 100%, 15%);
-    border: none;
-    margin: 0.5em;
-    color: hsl(0, 0%, 100%);
-    font-weight: 700;
-    border-radius: 0.5em;
+#square-1 .radio{
+    display: none;
 }
 
-#square-1 #button-15{
+#square-1 label{
+    background-color:hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    width: 4.4em;
+    height: 2.5em;
+    margin-top: 15px;
+    margin: 10px;
+    /* padding: 25px; */
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#square-1 label:hover{
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
-    font-weight: 700;
+}
+
+#square-1 input[type="radio"]:checked + label{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 
 #square-1 #button-custom{
     background-color: hsl(189, 41%, 97%);
     color: hsl(184, 14%, 56%);
     font-weight: 700;
+    width: 5em;
+    height: 2.9em;
+    margin-top: 0.8em;
+    margin-left: 0.9em;
 }
 
 #square-2{
@@ -96,10 +125,17 @@ form{
     height: 20em;
     border-radius: 0.5em;
     color: hsl(0, 0%, 100%);
+    font-weight: 700;
     /* padding: 2em;
     margin: 2em; */
     padding: 1em;
+    padding-top: 2em;
     margin-left: 1em;
+}
+
+#square-2 h4{
+    color: hsl(184, 14%, 56%);
+    font-size: 12px;
 }
 
 #square-2 #tip-amount{
@@ -112,6 +148,11 @@ form{
     margin-left: 1em;
     color: hsl(172, 67%, 45%);
     font-size:2.5em;
+    text-align: end;
+}
+
+#square-2 #total-person h3{
+    margin-left: 1.5em;
 }
 
 #square-2 #total-person{
@@ -125,7 +166,9 @@ form{
     border-radius: 0.5em;
     color: hsl(183, 100%, 15%);
     font-weight: 700;
-    margin-top: 8em;
+    margin-top: 6em;
     width: 20em;
     height: 4em;
+    cursor: pointer;
 }
+
