@@ -68,8 +68,16 @@ function tipCalculator(){
     number2 = (((total*percentage)/people) + (total/people)).toFixed(2);
 
     document.getElementById("tip-calc").innerHTML = "$" + number1;
-    document.getElementById("total-calc").innerHTML = "$"+number2;
-    
+    document.getElementById("total-calc").innerHTML = "$"+number2; 
+}
+
+function uncheckEverything(){
+    // do something here
+    document.getElementById("5%").checked = false;
+    document.getElementById("10%").checked = false;
+    document.getElementById("15%").checked = false;
+    document.getElementById("25%").checked = false;
+    document.getElementById("50%").checked = false;
 }
 
 

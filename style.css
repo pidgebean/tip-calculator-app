@@ -7,19 +7,28 @@
     font-family: 'Space Mono', monospace;
 }
 
+html, body{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
 body{
     background-color: hsl(172, 67%, 45%);
+    display: flex;
 }
 
 form{
     width: 40em;
+    height: auto;
     display: flex;
     flex-direction: row;
     padding: 1em;
     padding-left: 1em;
     border-radius: 1em;
-    margin-top: 10em;
-    margin-left: 30em;
+    /* margin-top: 10em;
+    margin-left: 30em; */
+    margin: auto;
     background-color: hsl(0, 0%, 100%);
     justify-content: center;
     align-items: center;
@@ -64,10 +73,6 @@ form{
     outline: 2px solid hsl(172, 67%, 45%);
 }
 
-input[type="number"]{
-    -moz-appearance: textfield;
-}
-
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button{
     -webkit-appearance: none;
@@ -98,7 +103,9 @@ input[type="number"]::-webkit-inner-spin-button{
     margin-top: 15px;
     margin: 10px;
     font-size: 1.56em;
-    padding-left: 0.5em;
+    font-weight: 700;
+    text-align: center;
+    /* padding-left: 0.5em;*/
     padding-top: 0.31em;
     border-radius: 15%;
     cursor: pointer;
@@ -158,8 +165,6 @@ input[type="number"]::-webkit-inner-spin-button{
     border-radius: 0.5em;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
-    /* padding: 2em;
-    margin: 2em; */
     padding: 1em;
     padding-top: 2em;
     margin-left: 1em;
@@ -176,16 +181,20 @@ input[type="number"]::-webkit-inner-spin-button{
     margin-bottom: 2em;
 }
 
+#square-2 #tip-amount span{
+    font-size: 12px;
+}
+
 #square-2 h3{
-    margin-left: 1em;
     color: hsl(172, 67%, 45%);
     font-size:2.5em;
     text-align: end;
+    width: 5em;
 }
 
 #square-2 #total-person h3{
-    margin-left: 1.9em;
     text-align: end;
+    width: 5.4em;
 }
 
 #square-2 #total-person{
@@ -193,16 +202,32 @@ input[type="number"]::-webkit-inner-spin-button{
     flex-direction: row;
 }
 
+#square-2 #total-person span{
+    font-size: 12px;
+}
+
 #square-2 button{
     background-color: hsl(172, 67%, 45%);
     border: none;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     color: hsl(183, 100%, 15%);
     font-weight: 700;
-    margin-top: 6em;
-    width: 20em;
+    font-size: 20px;
+    margin-top: 4em;
+    width: 14em;
     height: 4em;
     cursor: pointer;
+}
+
+@media (max-width: 380px){
+    #square-2{
+        height: 18em;
+    }
+
+    #square-2 button{
+        margin-top: 1em;
+        height: 3em;
+    }
 }
 
 @media (max-width: 500px){
@@ -234,7 +259,15 @@ input[type="number"]::-webkit-inner-spin-button{
     }
 
     #square-1 #person-img{
-        margin-top: 23em;
+        margin-top: 21.7em;
+    }
+
+    #square-2{
+        margin: 0;
+    }
+
+    #square-2 button{
+        width: 14.5em;
     }
 
     
